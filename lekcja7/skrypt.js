@@ -1,6 +1,7 @@
 const obecnaData = new Date();
 const dataPoczatkowa = new Date("2023-10-26 00:00:00");
 const dataKoncowa = new Date("2023-10-26 12:00:00");
+const wiekWLatach = Math.floor(roznicaCzasu / (1000 * 60 * 60 * 24 * 365.25)); // Uwzględnia przestępne lata
 
 // Obliczanie różnicy między datami w milisekundach
 const roznicaWMillisekundach = dataKoncowa - dataPoczatkowa;

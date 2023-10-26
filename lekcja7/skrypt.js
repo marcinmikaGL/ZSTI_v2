@@ -1,3 +1,4 @@
+const obecnaData = new Date();
 const dataPoczatkowa = new Date("2023-10-26 00:00:00");
 const dataKoncowa = new Date("2023-10-26 12:00:00");
 

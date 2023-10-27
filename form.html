@@ -1,20 +1,20 @@
-
 <!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
     <title>Formularz z Bootstrapem</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="skrypt4.js" async></script>
 </head>
 
 <body>
 
 <div class="container">
-    <form  method="post">
+    <form  id="form">
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
-                    <label for="name">Imię</label>
+                    <label  for="name">Imię</label>
                     <input type="text"  class="form-control" id="name" name="name">
                 </div>
                 <div class="form-group">
@@ -28,8 +28,8 @@
                 <div class="form-group">
                     <label for="gender">Płeć</label>
                     <select class="form-control" id="gender" name="gender">
-                        <option value="male">Mężczyzna</option>
-                        <option value="female">Kobieta</option>
+                        <option value="1">Mężczyzna</option>
+                        <option value="0">Kobieta</option>
                     </select>
                 </div>
                 <div class="form-group">
@@ -39,8 +39,8 @@
             </div>
             <div class="col-md-6">
                 <div class="form-group">
-                    <label for="shoe_size">Rozmiar buta</label>
-                    <input type="number" class="form-control" id="shoe_size" name="shoe_size">
+                    <label for="shoeSize">Rozmiar buta</label>
+                    <input type="number" class="form-control" id="shoeSize" name="shoeSize">
                 </div>
                 <div class="form-group">
                     <label for="level">Poziom w Pokemon Go</label>
@@ -49,23 +49,33 @@
                 <div class="form-group">
                     <label for="color">Wybór koloru</label>
                     <select class="form-control" id="color" name="color">
-                        <option value="black">Czarny</option>
-                        <option value="white">Biały</option>
-                        <option value="red">Czerwony</option>
-                        <option value="green">Zielony</option>
-                        <option value="blue">Niebieski</option>
-                        <option value="yellow">Żółty</option>
-                        <option value="orange">Pomarańczowy</option>
+                        <option value="#000">Czarny</option>
+                        <option value="#fff">Biały</option>
+                        <option value="#f00">Czerwony</option>
+                        <option value="#0f0">Zielony</option>
+                        <option value="#00f">Niebieski</option>
+                        <option value="#ff0">Żółty</option>
+                        <option value="#666">Szary</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <button type="button" onclick="funkcja()" class="btn btn-primary">Wyślij</button>
+                    <button name="bt" type="button" onclick="funkcja()" class="btn btn-primary">Wyślij</button>
+            
                 </div>
             </div>
-            <div id="wypluwacz">tu będzie błąd</div>
+            <div id="wypluwacz"><p style="color:red;">tu będzie błąd</p></div>
+        <table class="table" id="tabela">
+         <tbody>   
+         <tr>
+             <td>zmienna</td>
+             <td>wartość</td>
+             <td>opcja</td>
+         </tr> 
+         </tbody>  
+        </table>
         </div>
     </form>
-    <script src="skrypt.js"></script>
+    
 </div>
 
 </body>
